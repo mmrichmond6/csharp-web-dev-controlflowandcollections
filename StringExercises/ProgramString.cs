@@ -1,17 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace StringExercises
 {
-    class Program
+    public class ProgramString
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello Strings!");
 
             //create a string for a value
-            string sentences;
-            sentences = "I would not, could not, in a box.  I would not, could not with a fox.  \nI will not eat them in a house.  I will not eat them with a mouse.";
-            Console.WriteLine(sentences);
+
+                string sentences;
+                sentences = "I would not, could not, in a box.  I would not, could not with a fox.  \nI will not eat them in a house.  I will not eat them with a mouse.";
+                Console.WriteLine(sentences);
+
+
+            
 
             //use Split method to divide at each space (stored in an array)
             string[] wordArray = sentences.Split(' ');
@@ -30,5 +35,7 @@ namespace StringExercises
             string[] sentencesArray = sentences.Split("  ");
             Console.WriteLine(string.Join(",", sentencesArray));
         }
+        public static string sentences = "I would not, could not, in a box.  I would not, could not with a fox.  I will not eat them in a house.  I will not eat them with a mouse.";
+
     }
 }

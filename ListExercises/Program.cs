@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using StringExercises;
 
 namespace ListExercises
 {
@@ -38,6 +39,13 @@ namespace ListExercises
 
             Console.WriteLine(sumEven(numbers));
 
+
+
+            string wordsStringPractice = ProgramString.sentences;
+            string[] wordArray = wordsStringPractice.Split(' ');
+            List<string> words = new List<string>();
+            words.AddRange(wordArray);
+
             static void fiveLetters(List<string> words)
             {
                 foreach (string word in words)
@@ -49,11 +57,14 @@ namespace ListExercises
                 }
             }
 
-            List<string> words = new List<string>();
-            string[] words_arr = { "hello", "my", "good", "friend", "Jill", "You", "bring", "happy", "thoughts" };
-            words.AddRange(words_arr);
+            //List<string> words = new List<string>();
+            //string[] words_arr = { "hello", "my", "good", "friend", "Jill", "You", "bring", "happy", "thoughts" };
+            //words.AddRange(words_arr);
 
-            foreach(string word in words)
+            
+
+
+            foreach (string word in words)
             {
                 Console.WriteLine(word);
             }
