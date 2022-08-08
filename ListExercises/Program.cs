@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using StringExercises;
 
 namespace ListExercises
@@ -42,9 +43,7 @@ namespace ListExercises
 
 
             string wordsStringPractice = ProgramString.sentences;
-            string[] wordArray = wordsStringPractice.Split(' ');
-            List<string> words = new List<string>();
-            words.AddRange(wordArray);
+            List<string> words = wordsStringPractice.Split(new char[] { ' ', ',', '.' }).ToList();
 
             static void fiveLetters(List<string> words)
             {
